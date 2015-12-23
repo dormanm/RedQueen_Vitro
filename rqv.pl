@@ -42,4 +42,9 @@ while ($len ne 20) {
   $len = length($dna1);
 }
 
-print "$dna1\n";
+print "\nThe 20mer I have generated is of 5'-3' sequence: $dna1\n";
+
+$dna2 = reverse $dna1;
+$dna2 =~ y/GATC/CTAG/;
+
+print "And the reciprocal 20mer is of 5'-3' sequence: $dna2\n";
